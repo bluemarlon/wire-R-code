@@ -49,6 +49,7 @@ ts.plot(ts.ex);plot(PC,xlab ="x1",ylab="x2",main="PC");plot(diag$diagram)
 
 # ex.2.5 diag for plot
 library(tidyverse)
+T = 480;per1=12;ts1 = cos(1:T*2*pi/per1);
 x.ts = ts1; d=15; N=201; T1 = 216;
 x.ts <- pracma::movavg(x.ts, 5, type = "s") #step 0
 sp.ts <- stats::spline(1:T*2*pi/T, x.ts, n=T1)$y #step 1.1
